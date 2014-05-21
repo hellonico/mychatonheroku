@@ -69,6 +69,6 @@
               (str uri "?" qs) uri))
       resp)))
 
-(defn -main [& args]
-  (run-server (-> #'chartrootm site wrap-request-logging) {:port 80})
+(defn -main [port]
+  (run-server (-> #'chartrootm site wrap-request-logging) {:port port})
   (info "server started. http://127.0.0.1:9898. Try open 2 browser tabs, have a nice chat"))

@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/chatwithme.jar clojure.main -m main $PORT

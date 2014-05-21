@@ -9,6 +9,7 @@
                  [http-kit "2.1.4"]]
   :warn-on-reflection true
   :min-lein-version "2.0.0"
+  :uberjar-name "chatwithme.jar"
   :main main
   :test-paths ["test"]
   :plugins [[lein-swank "1.4.4"]]
