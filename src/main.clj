@@ -70,5 +70,5 @@
       resp)))
 
 (defn -main [port]
-  (run-server (-> #'chartrootm site wrap-request-logging) {:port port})
-  (info "server started. http://127.0.0.1:9898. Try open 2 browser tabs, have a nice chat"))
+  (run-server (-> #'chartrootm site wrap-request-logging) {:port (Integer/parseInt port)}))
+  ; (info "server started. http://127.0.0.1:9898. Try open 2 browser tabs, have a nice chat"))
